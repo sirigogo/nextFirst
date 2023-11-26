@@ -12,8 +12,9 @@ export default async function List() {
         <div className="list-item" key={i}>
           <Link href={`/detail/${data._id}`}>
             <h4>{data.title}</h4>
-            <p>1월 1일</p>
           </Link>
+          <Link href={`/edit/${data._id}`}>수정</Link>
+          <p>1월 1일</p>
           <DetailLink />
         </div>
       ))}
